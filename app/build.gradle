@@ -1,0 +1,88 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.co.dinofox.bubblebuilder"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 180
+        versionName "4.5.0-RC4"
+
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+}
+
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile('io.socket:socket.io-client:0.7.0') {
+        // excluding org.json which is provided by Android
+        exclude group: 'org.json', module: 'json'
+    }
+    compile 'com.github.jaydeepw:poly-picker:v1.0.22'
+    compile 'com.mlsdev.rximagepicker:library:1.1.2'
+    compile 'io.reactivex:rxjava:1.0.14'
+    compile 'ch.acra:acra:4.8.5'
+    compile 'com.google.android.gms:play-services-base:8.3.0'
+    compile 'com.google.android.gms:play-services-auth:8.3.0'
+    compile 'com.google.android.gms:play-services-drive:8.3.0'
+    compile 'com.google.android.gms:play-services-appindexing:8.3.0'
+    compile 'com.google.android.gms:play-services-identity:8.3.0'
+    compile 'com.github.kanytu:android-parallax-recyclerview:v1.6'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.github.kanytu:android-parallax-recyclerview:v1.6'
+    compile 'com.github.amlcurran.showcaseview:library:5.4.3'
+    compile 'com.android.support:design:23.1.1'
+    compile('com.mikepenz:materialdrawer:4.6.4@aar') {
+        transitive = true
+    }
+    compile 'com.mikepenz:google-material-typeface:x.y.z@aar'
+    //Google Material Icons
+    compile 'com.mikepenz:fontawesome-typeface:x.y.z@aar'
+    //FontAwesome
+    compile 'com.mikepenz:iconics-core:2.5.5@aar'
+    compile 'com.android.support:cardview-v7:23.1.1'
+    compile 'com.android.support:recyclerview-v7:23.1.1'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.mikepenz:google-material-typeface:2.1.0.1.original@aar'
+    compile 'com.mikepenz:material-design-iconic-typeface:2.2.0.1@aar'
+    compile 'com.github.clans:fab:1.6.2'
+    compile 'com.android.support:design:23.1.1'
+    compile 'com.mikepenz:fontawesome-typeface:4.5.0.1@aar'
+    compile 'com.google.code.gson:gson:2.6.1'
+    compile 'com.mikepenz:octicons-typeface:3.2.0.1@aar'
+    compile 'com.mikepenz:meteocons-typeface:1.1.0.1@aar'
+    compile 'com.mikepenz:community-material-typeface:1.3.41.1@aar'
+    compile 'com.mikepenz:weather-icons-typeface:2.0.10.1@aar'
+    compile 'com.mikepenz:typeicons-typeface:2.0.7.1@aar'
+    compile 'com.mikepenz:entypo-typeface:1.0.0.1@aar'
+    compile 'com.ms-square:expandableTextView:0.1.4'
+    compile 'com.mikepenz:devicon-typeface:2.0.0.1@aar'
+    compile 'com.mikepenz:foundation-icons-typeface:3.0.0.1@aar'
+    compile 'com.mikepenz:ionicons-typeface:2.0.1.1@aar'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile('com.mikepenz:aboutlibraries:5.5.8@aar') {
+        transitive = true
+    }
+    apply plugin: 'com.android.application'
+    apply plugin: 'com.google.gms.google-services'
+    apply plugin: 'com.android.application'
+    apply plugin: 'com.jakewharton.hugo'
+
+}

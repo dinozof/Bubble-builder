@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="Project Management Preferences"
+        android:key="first_category">
+
+        <SwitchPreference
+
+            android:key="save_on_drive_preference"
+            android:title="Save Projects on Drive"
+            android:summary="Select to save your projects on Drive"
+            android:defaultValue="false"
+            android:enabled="false"
+            />
+
+        <ListPreference
+            android:title="Source for storage"
+            android:key="priority_saving"
+            android:summary="%s"
+            android:entries="@array/Save_source"
+            android:entryValues="@array/save_source_values"
+            android:dialogTitle="Select a Source"
+            android:defaultValue="0"
+            android:enabled="false"
+            />
+
+        <SwitchPreference
+            android:key="first_time_showcase"
+            android:title="Display Suggestions"
+            android:summary="Enable Suggestions"
+            android:enabled="true"
+            android:defaultValue="true"
+            />
+
+    </PreferenceCategory>
+
+
+
+    <PreferenceCategory
+        android:title="Bubble Level Preferences"
+        android:key="second_category">
+
+
+        <CheckBoxPreference
+
+            android:key="calibration_setting"
+            android:title="Reset Calibration"
+            android:summary="Choose if you want to calibrate again"
+            android:enabled="true"
+            android:defaultValue="true"
+            />
+
+        <EditTextPreference
+
+                 android:key="output_speed"
+                 android:title="Bubble Output Speed"
+                 android:summary="Define the output speed for the Bubble"
+                 android:dialogTitle="Output Speed"
+                 android:dialogMessage="Choose between: \n 0 - normal \n 1 - UI \n 2 - Game \n 3 - Fastest (Default)"
+                 android:defaultValue="3"
+                 android:inputType="number"
+            />
+
+        <EditTextPreference
+
+            android:key="FPS_bubble"
+            android:title="Bubble FPS speed"
+            android:summary="Define the FPS for Bubble Animation"
+            android:dialogTitle="FPS"
+            android:dialogMessage="Default is 120 \n range between 30 - 120"
+            android:defaultValue="120"
+            android:inputType="number"/>
+
+
+
+        <EditTextPreference
+
+            android:key="x_tolerance"
+            android:title="Bubble X Axis tolerance"
+            android:summary="Define the Tolerance for X Axis"
+            android:dialogTitle="X Tolerance"
+            android:dialogMessage="Default is 0.5"
+            android:defaultValue="0.5"
+            android:inputType="numberDecimal"/>
+
+        <EditTextPreference
+
+            android:key="y_tolerance"
+            android:title="Bubble Y Axis tolerance"
+            android:summary="Define the Tolerance for Y Axis"
+            android:dialogTitle="Y Tolerance"
+            android:dialogMessage="Default is 0.5"
+            android:defaultValue="0.5"
+            android:inputType="numberDecimal"/>
+
+        <EditTextPreference
+
+            android:key="z_tolerance"
+            android:title="Bubble Z Axis tolerance"
+            android:summary="Define the Tolerance for Z Axis"
+            android:dialogTitle="Z Tolerance"
+            android:dialogMessage="Default is 1"
+            android:defaultValue="1"
+            android:inputType="numberDecimal"/>
+
+    </PreferenceCategory>
+
+
+ </PreferenceScreen>

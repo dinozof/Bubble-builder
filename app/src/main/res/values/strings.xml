@@ -1,0 +1,107 @@
+<resources>
+    <string name="app_name">Bubble Builder</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_item_home">Bubble</string>
+    <string name="welcome_message">Welcome!</string>
+    <string name="drawer_item_setting">Settings</string>
+    <string name="drawer_item_info">Info</string>
+    <string name="drawer_item_help">Help</string>
+    <string name="action_done" > Done! </string>
+    <string name="some_value">this is a placeholder</string>
+    <string name="Card_view_text_description">Add Your text Description</string>
+    <string name="Card_view_text_cost">COST OF A PIECE:</string>
+    <string name="Card_view_Title">Insert a Title</string>
+    <string name="dummyText">Questo è un testo di prova per
+        verificare se il corpo di un oggetto
+        testuale vien correttamente rappresentato
+        nel campo rispettivo.
+        E\' composto da alcune righe. dovrebbe rappresentare un testo molto lungo
+        che potrebbe comparire nella schermata in questione.
+        se ci sono problemi di rappresentazione stai sbagliando.</string>
+    <string name="dummyTitle">Dummy Title</string>
+    <string name="action_deleted">Cancelled</string>
+    <string name="dummyPrice">138.89</string>
+    <string name="Card_view_cost">0.00</string>
+    <string name="snackbar_card_delete">Delete</string>
+    <string name="snackbar_card_undo_action">Undo</string>
+    <string name="loading">Loading</string>
+    <string name="totalCost">Total Cost</string>
+    <string name="hint_title">Title</string>
+    <string name="new_title_string">Change Project Title</string>
+    <string name="action_info">Info</string>
+    <string name="aboutLibraries_description_showIcon">true</string>
+    <string name="aboutLibraries_description_showVersion">true</string>
+    <string name="aboutLibraries_description_text">This app was developed by Stefano Volponi</string>
+    <string name="my_projects">My Projects</string>
+    <string name="general">General</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="Sign_in_title">Google Sign In</string>
+    <string name="Sign_in_description">Save Data on Google Drive</string>
+    <string name="snackbar_card_new_project">New Project Added</string>
+    <string name="calibrated_PITCH">calibrated_PITCH</string>
+    <string name="calibrated_ROLL">calibrated_ROLL</string>
+    <string name="drivefileID" />
+    <string name="savedFileProjectName">MyProjects.txt</string>
+    <string name="savedFileProjectType">text/plain</string>
+    <string name="standardProgressBarInformation">retrieving informations</string>
+    <string name="needPermissionText">In order to access the Internet, the apps need the correct permission</string>
+    <string name="connectionInterruptedMessage">Connection Interrupted</string>
+    <string name="saveOnDrivePreference">save_on_drive_preference</string>
+    <string name="signedInAS">  Signed in as: </string>
+    <string name="rotationLocked">Screen rotation locked</string>
+    <string name="rotationEnabled">Screen rotation enabled</string>
+    <string name="calibrationNeedStableSurface">Calibration needs a stable surface</string>
+    <string name="calibrationNeedStableSurfaceMessage">Are you sure your device lies on a stable surface?</string>
+    <string name="internalMemory">Internal Memory</string>
+    <string name="googleDrive">Google Drive</string>
+    <string name="showcaseTitle">Project Creation</string>
+    <string name="showcaseDescription">\n\nWELCOME TO BUBBLE BUILDER!\n\nPress the Project Button to create a new Project!
+        Projects will be visible in your Drawer by swiping from the left edge of the screen to the right.
+        \nIf you want to delete a project, open the drawer and long press on a project label!
+        \n\nYou can also sync your data with Google Drive, just log in the option!
+    \n\nSuggestions can be disabled in the options</string>
+    <string name="showcaseTitleNewProject">Add components to your Project</string>
+    <string name="showcaseDescriptionNewProject">You can add new components to your project (such as nails, screws, bolts, wood axes, drills &#8230;) by pressing the Floating button.
+        \nIf the price doesn\'t automatically update, press the update icon on the right of the toolbar. \nYou can also
+        adjust the Order of your components by long pressing a card, and swiping up or down. \nDelete a component with a simple
+        swipe to the left or to the right of your screen.
+    \nSuggestions can be disabled in the options</string>
+    <string name="overvriteCurrentInfo">Offline Projects</string>
+    <string name="overvriteCurrentInfoMessage">Bubble Builder found some projects that are currently backed up
+        in local, and will try to merge them with the online Drive Backup.\nWARNING: this can cause duplicates.</string>
+    <string name="overwrite">Continue</string>
+    <string name="take_Photo">Take Photo</string>
+    <string name="choose_from_Library">Choose from Library</string>
+    <string name="select_image_source">Select an image!</string>
+    <string name="calibrating">Calibrating &#8230;</string>
+    <string name="Card_view_component_amount">NUMBER OF PIECES: </string>
+    <string name="Card_view_peace_number">0</string>
+    <string name="new_project">New Project</string>
+    <string name="zero_grade_rotation">0°</string>
+    <string name="crash_toast_text">Application crashed</string>
+    <string name="drive_correctly_synchronised">drive_correctly_synchronised</string>
+    <string name="sync_with_drive_programmed">sync_with_drive_programmed</string>
+    <string name="backup_restore_from_Drive">backup_restore_from_Drive</string>
+    <string name="save_on_drive_preference">save_on_drive_preference</string>
+    <string name="priority_saving">priority_saving</string>
+    <string name="add_external_link">Add an external link</string>
+    <string name="link">Link</string>
+    <string name="search_on_amazon">Search on Amazon</string>
+    <string name="amazon_base_link"><![CDATA[http://www.amazon.it/s/ref=nb_sb_ss_i_3_7?field-keywords=]]></string>
+    <string name="image_fetch_error">Could not fetch image</string>
+    <string name="select_backup_to_restore">Select a Backup</string>
+    <string name="sync_succed">Sync with Drive Complited</string>
+    <string name="sync_failed">Sync with Drive failed! Please log out and try again in 5 minutes</string>
+    <string name="option_disabled">Drive Option have been disable until Sync succeds</string>
+    <string name="try_log_again">Please Try to Login Again on Bubble Builder</string>
+    <string name="amazon_button_enabled">amazon_button_enabled</string>
+
+    <string-array name="Save_source">
+        <item >@string/internalMemory</item>
+        <item >@string/googleDrive</item>
+    </string-array>
+    <string-array name="save_source_values">
+        <item >0</item>
+        <item >1</item>
+    </string-array>
+</resources>

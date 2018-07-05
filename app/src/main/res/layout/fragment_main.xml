@@ -1,0 +1,154 @@
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+
+
+
+     <com.co.dinofox.bubblebuilder.views.SimpleDrawingView
+         android:id="@+id/simpleDrawingView1"
+         android:layout_width="wrap_content"
+         android:background="@color/colorSecondary"
+         android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="26dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center_vertical|center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Calibrate"
+                android:id="@+id/calibrateTextView"
+                android:layout_alignTop="@+id/calibrate_button"
+                android:layout_toRightOf="@+id/calibrate_button"
+                android:layout_toEndOf="@+id/calibrate_button"
+                android:layout_alignBottom="@+id/calibrate_button"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:layout_marginRight="4dp" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/calibrate_button"
+                android:src="@drawable/ic_location_searching_24dp"
+                android:background="#00ffffff"
+                android:layout_alignParentTop="true"
+                android:layout_alignLeft="@+id/linearLayout"
+                android:layout_alignStart="@+id/linearLayout"
+                android:layout_marginLeft="4dp" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/calibrated"
+                android:background="#00ffffff"
+                android:layout_alignParentTop="true"
+                android:layout_alignLeft="@+id/linearLayout"
+                android:layout_alignStart="@+id/linearLayout"
+                android:layout_marginLeft="4dp"
+                android:src="@drawable/ic_gps_fixed_24dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center_vertical|center_horizontal">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rotateButton"
+                android:src="@drawable/ic_screen_rotation_black_24dp"
+                android:background="#00ffffff"
+                android:layout_alignParentTop="true"
+                android:layout_alignLeft="@+id/linearLayout"
+                android:layout_alignStart="@+id/linearLayout"
+                android:visibility="visible"
+                android:layout_marginRight="4dp" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rotated"
+                android:background="#00ffffff"
+                android:layout_alignParentTop="true"
+                android:layout_alignLeft="@+id/linearLayout"
+                android:layout_alignStart="@+id/linearLayout"
+                android:src="@drawable/ic_screen_lock_rotation_black_24dp"
+                android:visibility="gone"
+                android:layout_marginRight="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Orientation"
+                android:id="@+id/textView"
+                android:layout_alignTop="@+id/calibrate_button"
+                android:layout_toRightOf="@+id/calibrate_button"
+                android:layout_toEndOf="@+id/calibrate_button"
+                android:layout_alignBottom="@+id/calibrate_button"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="4dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="4dp"
+            android:id="@+id/linearLayout"
+        android:gravity="center_horizontal">
+
+            <TextView
+                 android:layout_width="wrap_content"
+                 android:id="@+id/pitch"
+                 android:layout_height="match_parent"
+                 android:text="@string/zero_grade_rotation"
+                android:textColor="#ffffff"
+                 android:textStyle="bold"
+                 android:textSize="40sp"
+                android:layout_marginRight="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/roll"
+                android:layout_height="match_parent"
+                android:text="@string/zero_grade_rotation"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="40sp"
+                android:layout_marginLeft="5dp"
+                 />
+        </LinearLayout>
+
+
+
+</RelativeLayout>
+
+
+

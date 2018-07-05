@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view_coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardBackgroundColor="@color/card_background_color"
+                card_view:cardElevation="4dp"
+                android:layout_weight="0.48"
+                android:measureAllChildren="false">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="3dp">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="5dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/Card_title"
+                                    android:layout_height="match_parent"
+                                    android:text="@string/dummyTitle"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:layout_gravity="center_vertical"
+                                    android:visibility="visible"
+                                    android:gravity="center_vertical"
+                                    android:layout_marginLeft="4dp" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="@string/dummyTitle"
+                                    android:id="@+id/Card_title_editable"
+                                    android:textSize="14dp"
+                                    android:maxLines="3"
+                                    android:inputType="textMultiLine"
+                                    android:maxLength="50"
+                                    android:enabled="true"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="center_vertical"
+                                    android:visibility="invisible" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/Card_view_component_amount"
+                                android:id="@+id/component_amount"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:layout_gravity="center_vertical"
+                                android:textAlignment="inherit"
+                                android:gravity="center_vertical" />
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:id="@+id/frameLayout"
+                                android:gravity="center_vertical|right"
+                                android:layout_weight="0.02"
+                                android:visibility="visible" >
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:id="@+id/piece_number"
+                                    android:layout_height="fill_parent"
+                                    android:textSize="14dp"
+                                    android:text="@string/Card_view_peace_number"
+                                    android:textAlignment="gravity"
+                                    android:textIsSelectable="true"
+                                    android:visibility="visible"
+                                    android:gravity="center_vertical"
+                                    android:layout_marginLeft="9dp" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/Card_view_peace_number"
+                                    android:id="@+id/piece_number_editable"
+                                    android:visibility="invisible"
+                                    android:maxLength="4"
+                                    android:textSize="14sp"
+                                    android:inputType="number"
+                                    android:enabled="true"
+                                    android:layout_marginLeft="5dp"
+                                    android:textAlignment="gravity" />
+                            </FrameLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/Card_view_text_cost"
+                                android:id="@+id/cost_label"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:gravity="center_vertical|right|fill_vertical"
+                                android:layout_gravity="center_vertical" />
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:id="@+id/insert_cost_frame"
+                                android:gravity="center_vertical|right"
+                                android:layout_weight="0.02"
+                                android:visibility="visible">
+
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:id="@+id/insert_cost_label"
+                                    android:layout_height="fill_parent"
+                                    android:textSize="14dp"
+                                    android:text="@string/Card_view_cost"
+                                    android:textAlignment="gravity"
+                                    android:textIsSelectable="true"
+                                    android:layout_gravity="center"
+                                    android:visibility="visible"
+                                    android:gravity="center_vertical|center_horizontal" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/Card_view_cost"
+                                    android:id="@+id/insert_cost_label_editable"
+                                    android:visibility="invisible"
+                                    android:maxLength="7"
+                                    android:textSize="14sp"
+                                    android:layout_gravity="center"
+                                    android:inputType="numberDecimal"
+                                    android:enabled="true"
+                                    android:gravity="center_vertical|center_horizontal">
+                                </EditText>
+
+
+
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:id="@+id/description_text_frame"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginTop="5dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/Card_text_text_view"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:enabled="true"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="11dp"
+                                android:visibility="visible"
+                                android:singleLine="false"
+                                android:paddingLeft="1dp"
+                                android:paddingRight="1dp" />
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:id="@+id/Card_text_edit_text"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Card_view_text_description"
+                                android:visibility="invisible"
+                                android:textSize="@dimen/abc_text_size_body_1_material"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginBottom="5dp" />
+
+                        </FrameLayout>
+
+                        <Button
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/amazon_button"
+                            android:text="@string/search_on_amazon"
+                            android:layout_gravity="right"
+                            android:elegantTextHeight="false"
+                            android:focusableInTouchMode="false"
+                            android:allowUndo="false"
+                            android:backgroundTint="@color/about_libraries_title_openSource_dark"
+                            android:elevation="2dp"
+                            android:foregroundTint="@color/abc_secondary_text_material_dark" />
+
+
+                    </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

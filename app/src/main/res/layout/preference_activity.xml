@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/preferenceCoordinator"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/setting_tollbar"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/collapsing_toolbar_color"
+            android:fitsSystemWindows="true"
+            app:navigationContentDescription="@string/abc_action_bar_up_description"
+            app:navigationIcon="?attr/homeAsUpIndicator"
+            app:title="@string/action_settings"
+            />
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Sign_in_title"
+                android:layout_gravity="center_vertical"
+                style="@style/Base.TextAppearance.AppCompat.Widget.PopupMenu.Small" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Sign_in_description"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="2dp" />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:gravity="right"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_out"
+                android:id="@+id/sign_out_button"
+                android:layout_weight="0.11"
+                android:visibility="gone"
+                android:textColor="@color/md_red_800"
+                android:backgroundTint="#b8ffffff"
+                android:drawableTint="#00ffffff"
+                android:elegantTextHeight="false"
+                android:elevation="2dp"
+                android:background="#00ffffff" />
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/sign_in_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:visibility="visible" />
+            </LinearLayout>
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/container"
+        > </FrameLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
